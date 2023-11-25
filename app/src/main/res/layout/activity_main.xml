@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="25sp"
+        android:text="ColorPicker"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:id="@+id/textViewHead"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="255"
+        android:layout_below="@id/textViewHead"
+        android:id="@+id/seekBarRed"
+        android:layout_marginTop="30sp"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="128"
+        android:max="255"
+        android:layout_below="@id/seekBarRed"
+        android:id="@+id/seekBarGreen"
+        android:layout_marginTop="30sp"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="255"
+        android:max="255"
+        android:layout_below="@id/seekBarGreen"
+        android:id="@+id/seekBarBlue"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewRed"
+        android:textSize="25sp"
+        android:text="Red"
+        android:layout_below="@id/seekBarBlue"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewGreen"
+        android:textSize="25sp"
+        android:text="Green"
+        android:layout_below="@id/textViewRed"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewBlue"
+        android:textSize="25sp"
+        android:text="Blue"
+        android:layout_below="@id/textViewGreen"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textSize="50sp"
+        android:id="@+id/textViewColor"
+        android:text="(0, 0, 0)"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/textViewBlue"
+        />
+
+</RelativeLayout>
